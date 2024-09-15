@@ -4,10 +4,11 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  LightBulbIcon,
+  ArrowTrendingUpIcon,
+  SparklesIcon
 } from "@heroicons/react/20/solid";
+
 const navigation = [
   { name: "Product", href: "#" },
   { name: "Features", href: "#" },
@@ -26,7 +27,12 @@ export default function Home() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="p-1.5 flex flex-row">
+            <img
+                  alt="Soilsense logo"
+                  src="./SoilSenseLogo.png"
+                  className="w-10 h-auto mx-2"
+                />
               <p className="text-xl  text-black font-bold">SoilSense</p>
             </a>
           </div>
@@ -71,9 +77,9 @@ export default function Home() {
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">SoilSense</span>
                 <img
-                  alt=""
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                  alt="Soilsense logo"
+                  src="./SoilSenseLogo.png"
+                  className="w-10 h-auto mx-2"
                 />
               </a>
               <button
@@ -116,26 +122,22 @@ export default function Home() {
        
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Predict Plant Growth Like Never Before - Unlock the Future of
               Farming Today!
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Will add some details soon
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cupiditate impedit possimus error et aperiam placeat itaque voluptate commodi! Aliquid quae numquam labore corporis ipsa ex earum qui, iusto iure mollitia tenetur ipsum laboriosam odio ullam. Modi aliquam ut dolorum excepturi aspernatur maxime, nam necessitatibus dicta dolor tempora atque consequatur quasi similique unde voluptatem deleniti aut, velit amet explicabo, incidunt sint fugit sapiente neque quod. Harum eaque sed rerum nulla, recusandae quibusdam vel neque perferendis obcaecati asperiores perspiciatis repellat, at exercitationem magni quo fuga excepturi velit blanditiis? Blanditiis doloribus dicta aspernatur iusto perspiciatis architecto odit amet, illo, consequatur, illum esse!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-green-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                
               >
                 Get started
               </a>
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                Learn more <span aria-hidden="true">→</span>
-              </a>
+              
             </div>
           </div>
         </div>  
@@ -145,16 +147,12 @@ export default function Home() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-indigo-600">
-                  Deploy faster
-                </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  A better workflow
+                  A better way to analayze your crops
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                  id at vitae feugiat egestas.
+                  Here are some features provided by SoilSense:
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias officia possimus cupiditate vel sequi consequatur quisquam deserunt blanditiis ut? Repudiandae.
                 </p>
               </div>
             </div>
@@ -169,74 +167,45 @@ export default function Home() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
-                </p>
-                <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                
+                <ul role="list" className="space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
-                    <CloudArrowUpIcon
+                    < LightBulbIcon
                       aria-hidden="true"
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                      className="mt-1 h-5 w-5 flex-none text-green-600"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Push to deploy.
+                        Better Decisions
                       </strong>{" "}
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      SoilSense anaylzes soil, weather and market trends to recommend the best crops for optimal results
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <LockClosedIcon
+                    <ArrowTrendingUpIcon
                       aria-hidden="true"
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                      className="mt-1 h-5 w-5 flex-none text-green-600"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        SSL certificates.
+                        Increased profitablity
                       </strong>{" "}
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.
+                      It predicts crop prices and suggest ideal crops, helping farmers boost income. 
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <ServerIcon
+                    <SparklesIcon
                       aria-hidden="true"
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                      className="mt-1 h-5 w-5 flex-none text-green-600"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Database backups.
+                        Resource Efficieny.
                       </strong>{" "}
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      By optimizing resource use, SoilSense reduces water, fertilizer waste, and efficieny.
                     </span>
                   </li>
                 </ul>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
-                </h2>
-                <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
-                </p>
               </div>
             </div>
           </div>
