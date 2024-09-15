@@ -5,10 +5,14 @@ export default function SignUp() {
       <div className="flex flex-row min-h-full">
         <div className="flex min-h-full w-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h1 className=" text-5xl text-green-400 text-center font-bold font-serif ">
-              SoilSense
-            </h1>
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-green-800">
+              <div className="flex flex-col  items-center">
+              <img src="./SoilSenseLogo.png" alt="SoilSenseLogo" className="w-40" />       
+              <h1 className=" text-5xl text-green-500 text-center font-bold font-serif ">
+                SoilSense
+              </h1>
+            </div>
+            
+            <h2 className="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-green-800">
                 Create a new account
             </h2>
           </div>
